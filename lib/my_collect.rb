@@ -1,5 +1,4 @@
 def my_collect(array)
-    if block_given?
     i = 0
     arr2 =[]
     while i < array.length
@@ -8,4 +7,3 @@ def my_collect(array)
 end
   arr2
 end
-

@@ -1,12 +1,10 @@
-def my_collect(array)
-  if block_given?
-    i = 0
-    arr2 = []
-  while i < array.length
-    yield (array[i].split(" ").first)
-    i = i + 1
-  end
 
-end
-  array
-end
+def my_collect(array)
+   container = []
+   counter = 0
+   while counter < array.length
+     container << yield(array[counter])
+     counter += 1
+   end
+   container
+ end

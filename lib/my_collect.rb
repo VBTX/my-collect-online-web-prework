@@ -6,6 +6,7 @@ def my_collect(array)
     yield (array[i](" ").first)
     i = i + 1
   end
-  array 
+
 end
+  array 
 end
